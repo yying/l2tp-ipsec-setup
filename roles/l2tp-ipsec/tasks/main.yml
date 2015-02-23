@@ -107,3 +107,7 @@
   service: name=rsyslog
            state=restarted
 
+- name: Generate L2TP/IPSec instructions text file
+  template: src=vpn_information.txt.j2
+            dest=/root/vpn_information.txt.j2
+
