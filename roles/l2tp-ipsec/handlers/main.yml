@@ -1,0 +1,8 @@
+---
+- name: Restart strongSwan
+  service: name=strongswan
+           state=restarted
+
+- name: Restart xl2tpd
+  service: name=xl2tpd
+           state=restarted

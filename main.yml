@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - l2tp-ipsec
