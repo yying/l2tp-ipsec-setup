@@ -1,6 +1,6 @@
 VPN Information
 ---------------
-  Server Address: {{ streisand_ipv4_address }}
+  Server Address: {{ ansible_default_ipv4.address }}
   Username: user
   Password: {{ chap_password.stdout }}
   Shared Secret: {{ ipsec_preshared_key.stdout }}
